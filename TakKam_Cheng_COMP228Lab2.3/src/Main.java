@@ -1,0 +1,31 @@
+public class Main {
+
+    public static int add(int a, int b) {
+        return a + b;
+    }
+
+    public static double add(double a, double b, double c) {
+        return a + b + c;
+    }
+
+    public static int add(int[] numbers) {
+        int sum = 0;
+        for (int num : numbers) {
+            sum += num;
+        }
+        return sum;
+    }
+
+    public static void main(String[] args) {
+
+        int result1 = add(5, 10);
+        System.out.println("Result of adding two integers (5 + 10): " + result1);
+
+        double result2 = add(5.5, 10.5, 15.5);
+        System.out.println("Result of adding three doubles (5.5 + 10.5 + 15.5): " + result2);
+
+        int[] numbers = {1, 2, 3, 4, 5};
+        int result3 = add(numbers);
+        System.out.println("Result of adding an array of integers {1, 2, 3, 4, 5}: " + result3);
+    }
+}
